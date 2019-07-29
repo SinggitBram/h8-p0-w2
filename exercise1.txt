@@ -1,0 +1,89 @@
+Soal 1:
+
+Algoritma:
+
+1. tampung 600 ke variabel massa
+2. tampung 2 ke variabel percepatan
+3. hitung massa dikali percepatan
+4. tampung hasil perkalian di variabel gaya
+5. tampilkan gaya
+
+Pseudocode:
+
+STORE "massa" with 600
+STORE "percepatan" with 2
+STORE "gaya" without any value
+
+CALCULATE "massa" times "percepatan"
+SET "gaya" value with calculation result
+DISPLAY "gaya"
+
+
+
+
+Soal 2:
+
+Algoritma:
+1. Tampung number apapun ke variabel tahun
+2. Hitung apakah tahun habis dibagi 4 dan tidak habis dibagi 100, apabila true lanjut ke step 4
+3. Hitung apakah tahun habis dibagi 4 dan habis dibagi 100 dan habis dibagi 400 apabila true lanjut ke step 4
+4. Tampilkan "Tahun Kabisat"
+5. Apabila hasil hitungan false tampilkan "Bukan Tahun Kabisat"
+
+
+Pseudocode:
+
+STORE "tahun" with any value 
+IF "tahun" mod 4 equals to 0 AND "tahun" mod 100
+	not equals to 0
+	DISPLAY "Tahun kabisat"
+END IF
+
+ELSE IF "tahun" mod 4 equals to 0 AND "tahun" mod 100
+	equals to 0 AND "tahun" mod 400 equals to 0 
+	DISPLAY "Tahun kabisat"
+ELSE
+	DISPLAY "Bukan tahun kabisat"
+END IF
+
+
+
+
+Soal 3:
+
+Alogritma:
+
+1.Tampung angka 0 ke variabel pakaian
+2.Selama angka variabel pakaian kurang dari 20 tambahkan 1 ke pakaian
+3.Ketika pakaian sama dengan 20 tampilkan "mesin cuci nyala"
+
+
+Store "pakaian" to 0
+WHILE "pakaian" <20
+	ADD "pakaian" by 1
+END WHILE
+DISPLAY "mesin cuci nyala"
+
+
+
+
+Soal 4:
+
+1.tampung nilai 0 ke variabel murid
+2.tambah variabel kuku panjang
+3.cek apabila kuku panjang bernilai true maka tampilkan "dihukum"
+4.apabila kuku panjang bernilai false maka tampilkan "dipuji"
+
+
+STORE "murid" to 1
+STORE "kuku panjang" as boolean value
+
+WHILE "murid" < 41
+	DISPLAY "murid"
+  	DETERMINE "kuku panjang" as True or False
+  	IF "kuku panjang" is True
+  		THEN DISPLAY "DIHUKUM"
+  		ELSE
+    	DISPLAY "DIPUJI"
+	ENDIF
+END WHILE
