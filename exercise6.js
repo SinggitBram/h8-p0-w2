@@ -31,4 +31,65 @@ for(var angka4 = 20; angka4 > 0; angka4--) {
     console.log(angka4 + ' - I will become full stack developer')}
 
     // SOAL NOMOR 3
-    
+
+    var counter = 1;
+
+    while(counter < 101 ) {
+
+        if(counter % 2 === 0) {
+        console.log( counter + ' - Genap');
+        }
+
+        else {
+        console.log( counter + ' - Ganjil')
+    }
+    counter += 1;
+    }
+
+    console.log('-------------------------------------------------')
+
+    var counter2 = 1;
+
+    while(counter2 < 101 ) {
+
+        if(counter2 % 3 === 0) {
+        console.log( counter2 + ' KELIPATAN 3');
+        }
+
+        else {
+        console.log('')
+    }
+    counter2 += 2;
+    }
+
+    console.log('-------------------------------------------------')
+
+    var counter3 = 1;
+
+    while(counter3 < 101 ) {
+
+        if(counter3 % 6 === 0) {
+        console.log( counter3 + ' KELIPATAN 6');
+        }
+
+        else {
+        console.log('')
+    }
+    counter3 += 5;
+    }
+
+    console.log('-------------------------------------------------')
+
+    var counter4 = 1;
+
+    while(counter4 < 101 ) {
+
+        if(counter4 % 10 === 0) {
+        console.log( counter4 + ' KELIPATAN 10');
+        }
+
+        else {
+        console.log('')
+    }
+    counter4 += 9;
+    }
