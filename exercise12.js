@@ -12,4 +12,4 @@ waktu = jam + ':' + menitan
 return waktu
 }
   
-  console.log(konversiMenit(187)); // 1:03
+  console.log(konversiMenit(187));
