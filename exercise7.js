@@ -2,8 +2,9 @@
 
 var rows = 5
 
-for (i=0; i<rows2; i++)
-{console.log('*')
+for (i=0; i<rows; i++)
+{
+    console.log('*')
 }
    
 
