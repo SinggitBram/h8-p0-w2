@@ -1,89 +1,126 @@
 Soal 1:
 
+function newton(m,a){
+    let f = m*a
+    return f
+}
+console.log(newton(600,2))
+
 Algoritma:
 
-1. tampung 600 ke variabel massa
-2. tampung 2 ke variabel percepatan
-3. hitung massa dikali percepatan
-4. tampung hasil perkalian di variabel gaya
-5. tampilkan gaya
+1. Store value of 'mass' in 'variable'.
+2. Store value of 'acceleration in 'variable'.
+3. Calculate the equation using Newton Second Law (F=m*a)
+4. Store the calculation value in 'variable' 'force'
+5. Display the 'force' value. 
 
 Pseudocode:
 
-STORE "massa" with 600
-STORE "percepatan" with 2
-STORE "gaya" without any value
+SET 'mass' to 600
+SET 'acceleration' to 2
+CALCULATE 'force' as multiplication of 'mass' and 'acceleration'
+STORE the calculation in 'variable' 'force'
+DISPLAY 'force' value
 
-CALCULATE "massa" times "percepatan"
-SET "gaya" value with calculation result
-DISPLAY "gaya"
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 Soal 2:
 
+function kabisat(tahun) {
+    if ((tahun % 4 === 0 && tahun % 100 !== 0) || (tahun % 4 === 0 && tahun % 100 === 0 && tahun % 400 === 0)) {
+        return 'Tahun Kabisat'
+    }
+    return 'Bukan Tahun Kabisat'
+}
+console.log(kabisat(1448))
+
 Algoritma:
-1. Tampung number apapun ke variabel tahun
-2. Hitung apakah tahun habis dibagi 4 dan tidak habis dibagi 100, apabila true lanjut ke step 4
-3. Hitung apakah tahun habis dibagi 4 dan habis dibagi 100 dan habis dibagi 400 apabila true lanjut ke step 4
-4. Tampilkan "Tahun Kabisat"
-5. Apabila hasil hitungan false tampilkan "Bukan Tahun Kabisat"
+1. Set 'year' as a 'variable' with a value.
+2. Enter the year into leap year function.
+3. Check if 'year' is a leap year
+4. If 'year' modulus 4 is zero and 'year' modulus 100 is not zero, 'year' is 'leap year'
+5. If 'year' modulus 4 / 100 / 400 is zero, 'year' is 'leap year' 
 
 
 Pseudocode:
 
-STORE "tahun" with any value 
-IF "tahun" mod 4 equals to 0 AND "tahun" mod 100
-	not equals to 0
-	DISPLAY "Tahun kabisat"
-END IF
-
-ELSE IF "tahun" mod 4 equals to 0 AND "tahun" mod 100
-	equals to 0 AND "tahun" mod 400 equals to 0 
-	DISPLAY "Tahun kabisat"
+SET 'year' with a value 
+IF 'year' modulus 4 is zero and 'year' modulus 100 is not zero THEN
+    SHOW 'year is leap year'
+ELSEIF 'year' modulus 4 is zero and 'year' modulus 100 is zero and 'year' modulus 400 is zero THEN
+    SHOW 'year is leap year'
 ELSE
-	DISPLAY "Bukan tahun kabisat"
-END IF
+    SHOW 'year is not a leap year'
+ENDIF
 
-
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 Soal 3:
 
+function mesincuci(pakaian) {
+    for (let i = 0; i <= pakaian; i++) {
+        if (i === pakaian) {
+            return 'Mesin Cuci Nyala'
+        }
+    }
+}
+console.log(mesincuci(20))
+
 Alogritma:
 
-1.Tampung angka 0 ke variabel pakaian
-2.Selama angka variabel pakaian kurang dari 20 tambahkan 1 ke pakaian
-3.Ketika pakaian sama dengan 20 tampilkan "mesin cuci nyala"
+1. Set 'numberOfStudents' as a 'variable' with a value of 40.
+2. Run loops of inspection until counter reach the same value as numberOfStudents
+2. If during inspection, teacher finds student with 'long nails', then display 'punish the student'
+3. If during inspection, teacher finds student with 'short nails', then display 'praise the student'
 
+Pseudocode:
 
-Store "pakaian" to 0
-WHILE "pakaian" <20
-	ADD "pakaian" by 1
-END WHILE
-DISPLAY "mesin cuci nyala"
+SET 'basket' as a 'variable' with initial value of 20
+SET 'clothes' as a 'variable' with initial value of 0
+SET 'washMachine' as a 'variable' with initial value of false
+WHILE 'basket' is not zero
+    INCREMENT 'clothes' by 1
+    DECREMENT 'basket' by 1
+    IF 'clothes' equal to 20 and 'basket' equal to 0 THEN
+        SET 'washMachine' as true
+    ELSE 
+        SET 'washMachine as false
+    ENDIF
+ENDWHILE
 
-
-
+-------------------------------------------------------------------------------------------------------------------------
 
 Soal 4:
+
+function periksa(murid) {
+    let hasil = []
+    for (let i = 0; i < murid.length; i++) {
+        if (murid[i] === 'panjang') {
+            hasil.push(`murid ke ${i} kamu dihukum`)
+        } else {
+            hasil.push(`murid ke ${i} kamu dipuji`)
+        }
+    }
+    return hasil
+}
+console.log(periksa(['panjang','pendek','pendek','pendek','panjang','panjang','pendek','panjang','pendek','panjang']))
+
+Algoritma:
 
 1.tampung nilai 0 ke variabel murid
 2.tambah variabel kuku panjang
 3.cek apabila kuku panjang bernilai true maka tampilkan "dihukum"
 4.apabila kuku panjang bernilai false maka tampilkan "dipuji"
 
+Pseudocode:
 
-STORE "murid" to 1
-STORE "kuku panjang" as boolean value
-
-WHILE "murid" < 41
-	DISPLAY "murid"
-  	DETERMINE "kuku panjang" as True or False
-  	IF "kuku panjang" is True
-  		THEN DISPLAY "DIHUKUM"
-  		ELSE
-    	DISPLAY "DIPUJI"
-	ENDIF
-END WHILE
+SET 'numberOfStudents' to 40
+SET 'counter' to 0
+WHILE 'counter' is not equal to 'numberOfStudents'
+    IF 'student' has 'long nails' THEN
+        DISPLAY 'punish the student'
+    ELSEIF 'student' has 'short nails' THEN
+        DISPLAY 'praise the student'
+    ENDIF
+    INCREMENT 'counter' by 1
+ENDWHILE
