@@ -1,26 +1,22 @@
 function xo(str) {
-
-    var jumlahx = 0
-    var jumlaho = 0
-    var huruf = str.length - 1
-    var i = 0
-    
-    while (i <= huruf) {
-        if (str.charAt(i) === 'x') {
-            jumlahx = jumlahx + 1
+    let x = 0
+    let o = 0
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'x') {
+            x++
+        } else if (str[i] === 'o') {
+            o++
         }
-        else if (str.charAt(i) === 'o') {
-            jumlaho = jumlaho + 1
-        }
-        i++
     }
-    if (jumlahx === jumlaho) {
+    if (x === o) {
         return true
     }
-    else if(jumlahx !== jumlaho) {
-        return false
-    }
-  }
+    return false
+}
   
   // TEST CASES
-  console.log(xo('xoxoxo'));
+console.log(xo('xoxoxo')); // true
+console.log(xo('oxooxo')); // false
+console.log(xo('oxo')); // false
+console.log(xo('xxxooo')); // true
+console.log(xo('xoxooxxo')); // true

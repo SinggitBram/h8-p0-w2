@@ -1,40 +1,39 @@
 // SOAL NOMOR 1
 
-var rows = 7
-
-for (i = 0; i < rows; i++) {
-    console.log('*')
+function asterik1(angka){
+    let hasil = ''
+    for(let i = 0; i<angka; i++){
+        hasil = hasil + '*' + '\n'
+    }
+    return hasil
 }
-   
 
-console.log('------------------------------------------------------------')
+console.log(asterik1(5))
 
 // SOAL NOMOR 2
 
-var rows2 = 7
-
-for (i = 0; i < rows2; i++) {
-    var star = "*"
-    for (j = 1; j < rows2; j++) {
-        star = star + "*"
+function asterik2(angka){
+    let hasil = ''
+    for(let i = 0; i<angka; i++){
+        for(let j = 0; j<angka; j++){
+            hasil = hasil + '*'
+        }
+        hasil = hasil + '\n'
     }
-    console.log(star)
+    return hasil
 }
-
-
-
-console.log('------------------------------------------------------------')
+console.log(asterik2(5))
 
 // SOAL NOMOR 3
 
-var rows3 = 7
-
-for (i=0; i<rows3; i++)
-{
-    var star = "*"
-    for (j=0; j<i; j++) 
-    {
-        star = star + "*"
+function asterik3(angka) {
+    let hasil = ''
+    for (let i = 0; i < angka; i++) {
+        for (let j = 0; j <= i; j++) {
+            hasil = hasil + '*'
+        }
+        hasil = hasil + '\n'
     }
-    console.log(star)
+    return hasil
 }
+console.log(asterik3(5))

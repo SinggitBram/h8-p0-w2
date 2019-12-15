@@ -18,8 +18,7 @@ console.log(hasilperkalian)
 // SOAL NOMOR 3
 
 function processSentence(name,age,adress,hobby) {
-    return 'Nama saya '+ name +' umur saya ' + age + ' tahun, alamat saya di ' + adress
-    + ' dan saya punya hobby yaitu ' + hobby
+    return `Nama saya ${name} umur saya ${age} tahun, alamat saya di ${adress} dan saya punya hobby yaitu ${hobby}`
     }
     var name = "Agus";
     var age = 30;
