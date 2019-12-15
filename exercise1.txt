@@ -58,20 +58,24 @@ ENDIF
 Soal 3:
 
 function mesincuci(pakaian) {
-    for (let i = 0; i <= pakaian; i++) {
-        if (i === pakaian) {
-            return 'Mesin Cuci Nyala'
+    let mesin = false
+    for (let i = pakaian; i >= 0; i--) {
+        if (i === 0) {
+            mesin = true
         }
     }
+    return mesin
 }
 console.log(mesincuci(20))
 
 Alogritma:
 
-1. Set 'numberOfStudents' as a 'variable' with a value of 40.
-2. Run loops of inspection until counter reach the same value as numberOfStudents
-2. If during inspection, teacher finds student with 'long nails', then display 'punish the student'
-3. If during inspection, teacher finds student with 'short nails', then display 'praise the student'
+1. Set 'basket' as a 'variable' with initial value of 20.
+2. Set 'clothes' as a 'variable' with initial value of 0.
+3. Set 'washMachine' as a 'variable' with initial value of false.
+4. Add clothes to washMachine and reduce the value in the basket
+5. If clothes is already 20 and basket is 0, set washMachine as on (true)
+6. Else washMachine is off (false)
 
 Pseudocode:
 
@@ -107,10 +111,10 @@ console.log(periksa(['panjang','pendek','pendek','pendek','panjang','panjang','p
 
 Algoritma:
 
-1.tampung nilai 0 ke variabel murid
-2.tambah variabel kuku panjang
-3.cek apabila kuku panjang bernilai true maka tampilkan "dihukum"
-4.apabila kuku panjang bernilai false maka tampilkan "dipuji"
+1. Set 'numberOfStudents' as a 'variable' with a value of 40.
+2. Run loops of inspection until counter reach the same value as numberOfStudents
+2. If during inspection, teacher finds student with 'long nails', then display 'punish the student'
+3. If during inspection, teacher finds student with 'short nails', then display 'praise the student'
 
 Pseudocode:
 
